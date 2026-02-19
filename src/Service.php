@@ -1,6 +1,6 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud;
+namespace dmitryla\yii2\yandex\cloud;
 
 use Aws\ResultInterface;
 use chemezov\yii2\yandex\cloud\interfaces\commands\Command;
