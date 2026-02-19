@@ -12,7 +12,15 @@ Bucket like An Amazon S3component for Yii2. (forked from Yandex Cloud component 
 > Version 2.x requires PHP 7. For PHP less 7.0 use [1.x](https://github.com/frostealth/yii2-aws-s3/tree/1.x).
 
 ## Installation
-
+0. Add in composer.json (if composer not found)
+    ```json
+   "repositories": [
+       {
+       "type": "vcs",
+       "url": "https://github.com/DmitryLa/yii2-aws-s3-custom"
+       }
+   ]
+   ```
 1. Run the [Composer](http://getcomposer.org/download/) command to install the latest version:
 
     ```bash
