@@ -1,21 +1,21 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\interfaces;
+namespace dmitryla\yii2AwsS3Custom\interfaces;
 
-use chemezov\yii2\yandex\cloud\interfaces\commands\Command;
-use chemezov\yii2\yandex\cloud\interfaces\handlers\Handler;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\Command;
+use dmitryla\yii2AwsS3Custom\interfaces\handlers\Handler;
 
 /**
  * Interface HandlerResolver
  *
- * @package chemezov\yii2\yandex\cloud\interfaces
+ * @package dmitryla\yii2AwsS3Custom\interfaces
  */
 interface HandlerResolver
 {
     /**
-     * @param \chemezov\yii2\yandex\cloud\interfaces\commands\Command $command
+     * @param \dmitryla\yii2AwsS3Custom\interfaces\commands\Command $command
      *
-     * @return \chemezov\yii2\yandex\cloud\interfaces\handlers\Handler
+     * @return \dmitryla\yii2AwsS3Custom\interfaces\handlers\Handler
      */
     public function resolve(Command $command): Handler;
 

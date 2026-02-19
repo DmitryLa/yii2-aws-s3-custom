@@ -1,11 +1,11 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\interfaces\handlers;
+namespace dmitryla\yii2AwsS3Custom\interfaces\handlers;
 
 /**
  * Interface Handler
  *
- * @package chemezov\yii2\yandex\cloud\interfaces\handlers
+ * @package dmitryla\yii2AwsS3Custom\interfaces\handlers
  */
 interface Handler
 {

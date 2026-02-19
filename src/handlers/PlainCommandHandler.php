@@ -10,12 +10,12 @@ use dmitryla\yii2AwsS3Custom\interfaces\commands\PlainCommand;
 /**
  * Class PlainCommandHandler
  *
- * @package chemezov\yii2\yandex\cloud\handlers
+ * @package dmitryla\yii2AwsS3Custom\handlers
  */
 final class PlainCommandHandler extends Handler
 {
     /**
-     * @param \chemezov\yii2\yandex\cloud\interfaces\commands\PlainCommand $command
+     * @param \dmitryla\yii2AwsS3Custom\interfaces\commands\PlainCommand $command
      *
      * @return \Aws\ResultInterface|\GuzzleHttp\Promise\PromiseInterface
      */
@@ -30,7 +30,7 @@ final class PlainCommandHandler extends Handler
     }
 
     /**
-     * @param \chemezov\yii2\yandex\cloud\interfaces\commands\PlainCommand $command
+     * @param \dmitryla\yii2AwsS3Custom\interfaces\commands\PlainCommand $command
      *
      * @return bool
      */
@@ -40,7 +40,7 @@ final class PlainCommandHandler extends Handler
     }
 
     /**
-     * @param \chemezov\yii2\yandex\cloud\interfaces\commands\PlainCommand $command
+     * @param \dmitryla\yii2AwsS3Custom\interfaces\commands\PlainCommand $command
      *
      * @return \Aws\CommandInterface
      */

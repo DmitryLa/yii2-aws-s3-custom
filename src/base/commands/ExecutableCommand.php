@@ -3,22 +3,22 @@
 namespace dmitryla\yii2AwsS3Custom\base\commands;
 
 use dmitryla\yii2AwsS3Custom\interfaces\Bus;
-use chemezov\yii2\yandex\cloud\interfaces\commands\ExecutableCommand as ExecutableCommandInterface;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\ExecutableCommand as ExecutableCommandInterface;
 
 /**
  * Class ExecutableCommand
  *
- * @package chemezov\yii2\yandex\cloud\base\commands
+ * @package dmitryla\yii2AwsS3Custom\base\commands
  */
 abstract class ExecutableCommand implements ExecutableCommandInterface
 {
-    /** @var \chemezov\yii2\yandex\cloud\interfaces\Bus */
+    /** @var \dmitryla\yii2AwsS3Custom\interfaces\Bus */
     private $bus;
 
     /**
      * ExecutableCommand constructor.
      *
-     * @param \chemezov\yii2\yandex\cloud\interfaces\Bus $bus
+     * @param \dmitryla\yii2AwsS3Custom\interfaces\Bus $bus
      */
     public function __construct(Bus $bus)
     {

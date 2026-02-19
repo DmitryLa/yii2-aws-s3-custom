@@ -1,11 +1,11 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\interfaces\commands;
+namespace dmitryla\yii2AwsS3Custom\interfaces\commands;
 
 /**
  * Interface Command
  *
- * @package chemezov\yii2\yandex\cloud\interfaces\commands
+ * @package dmitryla\yii2AwsS3Custom\interfaces\commands
  */
 interface Command
 {

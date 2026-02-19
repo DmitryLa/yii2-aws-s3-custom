@@ -8,12 +8,12 @@ use dmitryla\yii2AwsS3Custom\commands\GetUrlCommand;
 /**
  * Class GetUrlCommandHandler
  *
- * @package chemezov\yii2\yandex\cloud\handlers
+ * @package dmitryla\yii2AwsS3Custom\handlers
  */
 final class GetUrlCommandHandler extends Handler
 {
     /**
-     * @param \chemezov\yii2\yandex\cloud\commands\GetUrlCommand $command
+     * @param \dmitryla\yii2AwsS3Custom\commands\GetUrlCommand $command
      *
      * @return string
      */

@@ -3,11 +3,11 @@
 namespace dmitryla\yii2AwsS3Custom\commands;
 
 use Aws\ResultInterface;
-use chemezov\yii2\yandex\cloud\base\commands\ExecutableCommand;
-use chemezov\yii2\yandex\cloud\base\commands\traits\Async;
-use chemezov\yii2\yandex\cloud\interfaces\commands\Asynchronous;
-use chemezov\yii2\yandex\cloud\interfaces\commands\HasBucket;
-use chemezov\yii2\yandex\cloud\interfaces\commands\PlainCommand;
+use dmitryla\yii2AwsS3Custom\base\commands\ExecutableCommand;
+use dmitryla\yii2AwsS3Custom\base\commands\traits\Async;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\Asynchronous;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\HasBucket;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\PlainCommand;
 use GuzzleHttp\Promise\PromiseInterface;
 
 /**
@@ -15,7 +15,7 @@ use GuzzleHttp\Promise\PromiseInterface;
  *
  * @method ResultInterface|PromiseInterface execute()
  *
- * @package chemezov\yii2\yandex\cloud\commands
+ * @package dmitryla\yii2AwsS3Custom\commands
  */
 class RestoreCommand extends ExecutableCommand implements PlainCommand, HasBucket, Asynchronous
 {

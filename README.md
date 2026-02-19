@@ -33,7 +33,7 @@ Bucket like An Amazon S3component for Yii2. (forked from Yandex Cloud component 
     'components' => [
         // ...
         's3' => [
-            'class' => 'chemezov\yii2\yandex\cloud\Service',
+            'class' => 'dmitryla\yii2AwsS3Custom\Service',
             'credentials' => [ // Aws\Credentials\CredentialsInterface|array|callable
                 'key' => 'my-key',
                 'secret' => 'my-secret',
@@ -54,7 +54,7 @@ https://cloud.yandex.ru/docs/iam/operations/sa/create-access-key.
 ### Usage of the command factory and additional params
 
 ```php
-/** @var \chemezov\yii2\yandex\cloud\Service $s3 */
+/** @var \dmitryla\yii2AwsS3Custom\Service $s3 */
 $s3 = Yii::$app->get('s3');
 
 /** @var \Aws\ResultInterface $result */
@@ -83,7 +83,7 @@ $signedUrl = $s3->commands()->getPresignedUrl('filename.ext', '+2 days')->execut
 ### Short syntax
 
 ```php
-/** @var \chemezov\yii2\yandex\cloud\Service $s3 */
+/** @var \dmitryla\yii2AwsS3Custom\Service $s3 */
 $s3 = Yii::$app->get('s3');
 
 /** @var \Aws\ResultInterface $result */
@@ -112,7 +112,7 @@ $signedUrl = $s3->getPresignedUrl('filename.ext', '+2 days');
 ### Asynchronous execution
 
 ```php
-/** @var \chemezov\yii2\yandex\cloud\Service $s3 */
+/** @var \dmitryla\yii2AwsS3Custom\Service $s3 */
 $s3 = Yii::$app->get('s3');
 
 /** @var \GuzzleHttp\Promise\PromiseInterface $promise */
@@ -130,10 +130,10 @@ $promise = $s3->commands()->list('path/')->async()->execute();
 ## Advanced usage
 
 ```php
-/** @var \chemezov\yii2\yandex\cloud\interfaces\Service $s3 */
+/** @var \dmitryla\yii2AwsS3Custom\interfaces\Service $s3 */
 $s3 = Yii::$app->get('s3');
 
-/** @var \chemezov\yii2\yandex\cloud\commands\GetCommand $command */
+/** @var \dmitryla\yii2AwsS3Custom\commands\GetCommand $command */
 $command = $s3->create(GetCommand::class);
 $command->inBucket('my-another-bucket')->byFilename('filename.ext')->saveAs('/path/to/local/file.ext');
 
@@ -169,9 +169,9 @@ Consider the following command:
 
 namespace app\components\s3\commands;
 
-use chemezov\yii2\yandex\cloud\base\commands\traits\Options;
-use chemezov\yii2\yandex\cloud\interfaces\commands\Command;
-use chemezov\yii2\yandex\cloud\interfaces\commands\HasBucket;
+use dmitryla\yii2AwsS3Custom\base\commands\traits\Options;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\Command;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\HasBucket;
 
 class MyCommand implements Command, HasBucket
 {
@@ -215,7 +215,7 @@ The handler for this command looks like this:
 namespace app\components\s3\handlers;
 
 use app\components\s3\commands\MyCommand;
-use chemezov\yii2\yandex\cloud\base\handlers\Handler;
+use dmitryla\yii2AwsS3Custom\base\handlers\Handler;
 
 class MyCommandHandler extends Handler
 {
@@ -233,7 +233,7 @@ class MyCommandHandler extends Handler
 And usage this command:
 
 ```php
-/** @var \chemezov\yii2\yandex\cloud\interfaces\Service */
+/** @var \dmitryla\yii2AwsS3Custom\interfaces\Service */
 $s3 = Yii::$app->get('s3');
 
 /** @var \app\components\s3\commands\MyCommand $command */
@@ -251,8 +251,8 @@ Custom plain command looks like this:
 
 namespace app\components\s3\commands;
 
-use chemezov\yii2\yandex\cloud\interfaces\commands\HasBucket;
-use chemezov\yii2\yandex\cloud\interfaces\commands\PlainCommand;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\HasBucket;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\PlainCommand;
 
 class MyPlainCommand implements PlainCommand, HasBucket
 {

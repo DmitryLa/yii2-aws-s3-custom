@@ -1,20 +1,20 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\interfaces;
+namespace dmitryla\yii2AwsS3Custom\interfaces;
 
-use chemezov\yii2\yandex\cloud\interfaces\commands\Command;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\Command;
 
 /**
  * Interface CommandBuilder
  *
- * @package chemezov\yii2\yandex\cloud\interfaces
+ * @package dmitryla\yii2AwsS3Custom\interfaces
  */
 interface CommandBuilder
 {
     /**
      * @param string $commandClass
      *
-     * @return \chemezov\yii2\yandex\cloud\interfaces\commands\Command
+     * @return \dmitryla\yii2AwsS3Custom\interfaces\commands\Command
      */
     public function build(string $commandClass): Command;
 }

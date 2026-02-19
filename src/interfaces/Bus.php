@@ -1,18 +1,18 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\interfaces;
+namespace dmitryla\yii2AwsS3Custom\interfaces;
 
-use chemezov\yii2\yandex\cloud\interfaces\commands\Command;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\Command;
 
 /**
  * Interface Bus
  *
- * @package chemezov\yii2\yandex\cloud\interfaces
+ * @package dmitryla\yii2AwsS3Custom\interfaces
  */
 interface Bus
 {
     /**
-     * @param \chemezov\yii2\yandex\cloud\interfaces\commands\Command $command
+     * @param \dmitryla\yii2AwsS3Custom\interfaces\commands\Command $command
      *
      * @return mixed
      */

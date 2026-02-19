@@ -15,7 +15,7 @@ use Psr\Http\Message\StreamInterface;
 final class UploadCommandHandler extends Handler
 {
     /**
-     * @param \chemezov\yii2\yandex\cloud\commands\UploadCommand $command
+     * @param \dmitryla\yii2AwsS3Custom\commands\UploadCommand $command
      *
      * @return \Aws\ResultInterface|\GuzzleHttp\Promise\PromiseInterface
      */
