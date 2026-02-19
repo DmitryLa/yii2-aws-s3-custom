@@ -1,19 +1,15 @@
 {
-    "name": "chemezov/yii2-yandex-cloud",
+    "name": "dmitryla/yii2-aws-s3-custom",
     "type": "yii2-extension",
-    "description": "An Yandex Cloud component for Yii2",
+    "description": "Custom Yii2 AWS S3 integration with configurable endpoint",
     "keywords": ["yii2", "aws", "s3", "aws-s3", "yii2-aws", "yii2-s3", "yandex", "cloud", "bucket"],
-    "homepage": "https://github.com/chemezov/yii2-yandex-cloud",
+    "homepage": "https://github.com/DmitryLa/yii2-aws-s3-custom",
     "license": "MIT",
     "authors": [
         {
-            "name": "Ivan Kudinov",
-            "email": "i.kudinov@frostealth.ru",
-            "homepage": "http://frostealth.ru"
-        },
-        {
-            "name": "Constantine Chuprik",
-            "email": "constantinchuprik@gmail.com"
+            "name": "Dmitriy Larin",
+            "email": "dima@h3lab.ru",
+            "homepage": "http://h3lab.ru"
         }
     ],
     "support": {
@@ -30,7 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "chemezov\\yii2\\yandex\\cloud\\": "src/"
+            "DmitryLa\\Yii2AwsS3Custom\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
         }
     }
 }

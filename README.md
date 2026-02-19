@@ -1,6 +1,6 @@
-# Yii2 Yandex Cloud
+# Yii2 S3 custom bucket Cloud
 
-An Yandex Cloud component for Yii2 (forked from [Amazon S3 Yii2 component](https://github.com/frostealth/yii2-aws-s3)).
+Bucket like An Amazon S3component for Yii2. (forked from Yandex Cloud component for Yii2 (https://github.com/chemezov/yii2-yandex-cloud))
 
 [![License](https://poser.pugx.org/frostealth/yii2-aws-s3/license)](https://github.com/frostealth/yii2-aws-s3/blob/2.x/LICENSE)
 [![Latest Stable Version](https://poser.pugx.org/frostealth/yii2-aws-s3/v/stable)](https://packagist.org/packages/frostealth/yii2-aws-s3)
@@ -16,7 +16,7 @@ An Yandex Cloud component for Yii2 (forked from [Amazon S3 Yii2 component](https
 1. Run the [Composer](http://getcomposer.org/download/) command to install the latest version:
 
     ```bash
-    composer require chemezov/yii2-yandex-cloud
+    composer require dmitryla/yii2-aws-s3-custom
     ```
 
 2. Add the component to `config/main.php`
