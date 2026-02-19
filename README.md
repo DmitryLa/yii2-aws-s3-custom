@@ -30,6 +30,7 @@ An Yandex Cloud component for Yii2 (forked from [Amazon S3 Yii2 component](https
                 'key' => 'my-key',
                 'secret' => 'my-secret',
             ],
+            'endpoint' => 'https://storage.yandexcloud.net',
             'defaultBucket' => 'my-bucket',
         ],
         // ...
