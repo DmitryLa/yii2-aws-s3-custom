@@ -1,8 +1,8 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\base\commands;
+namespace dmitryla\yii2AwsS3Custom\base\commands;
 
-use chemezov\yii2\yandex\cloud\interfaces\Bus;
+use dmitryla\yii2AwsS3Custom\interfaces\Bus;
 use chemezov\yii2\yandex\cloud\interfaces\commands\ExecutableCommand as ExecutableCommandInterface;
 
 /**

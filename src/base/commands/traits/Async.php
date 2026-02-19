@@ -1,11 +1,11 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\base\commands\traits;
+namespace dmitryla\yii2AwsS3Custom\base\commands\traits;
 
 /**
  * Trait Async
  *
- * @package chemezov\yii2\yandex\cloud\base\commands\traits
+ * @package dmitryla\yii2AwsS3Custom\base\commands\traits
  */
 trait Async
 {

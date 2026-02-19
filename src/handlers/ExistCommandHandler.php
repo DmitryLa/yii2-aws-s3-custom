@@ -1,19 +1,19 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\handlers;
+namespace dmitryla\yii2AwsS3Custom\handlers;
 
-use chemezov\yii2\yandex\cloud\base\handlers\Handler;
-use chemezov\yii2\yandex\cloud\commands\ExistCommand;
+use dmitryla\yii2AwsS3Custom\base\handlers\Handler;
+use dmitryla\yii2AwsS3Custom\commands\ExistCommand;
 
 /**
  * Class ExistCommandHandler
  *
- * @package chemezov\yii2\yandex\cloud\handlers
+ * @package dmitryla\yii2AwsS3Custom\handlers
  */
 final class ExistCommandHandler extends Handler
 {
     /**
-     * @param \chemezov\yii2\yandex\cloud\commands\ExistCommand $command
+     * @param \dmitryla\yii2AwsS3Custom\commands\ExistCommand $command
      *
      * @return bool
      */

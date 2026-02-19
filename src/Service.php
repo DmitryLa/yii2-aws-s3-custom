@@ -1,11 +1,11 @@
 <?php
 
-namespace dmitryla\yii2\yandex\cloud;
+namespace dmitryla\yii2AwsS3Custom;
 
 use Aws\ResultInterface;
-use chemezov\yii2\yandex\cloud\interfaces\commands\Command;
-use chemezov\yii2\yandex\cloud\interfaces\HandlerResolver;
-use chemezov\yii2\yandex\cloud\interfaces\Service as ServiceInterface;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\Command;
+use dmitryla\yii2AwsS3Custom\interfaces\HandlerResolver;
+use dmitryla\yii2AwsS3Custom\interfaces\Service as ServiceInterface;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
@@ -25,7 +25,7 @@ use yii\helpers\ArrayHelper;
  * @method string           getUrl(string $filename)
  * @method string           getPresignedUrl(string $filename, $expires)
  *
- * @package chemezov\yii2\yandex\cloud
+ * @package dmitryla\yii2AwsS3Custom
  */
 class Service extends Component implements ServiceInterface
 {
@@ -75,7 +75,7 @@ class Service extends Component implements ServiceInterface
     /**
      * Executes a command.
      *
-     * @param \chemezov\yii2\yandex\cloud\interfaces\commands\Command $command
+     * @param \dmitryla\yii2AwsS3Custom\interfaces\commands\Command $command
      *
      * @return mixed
      */
@@ -89,7 +89,7 @@ class Service extends Component implements ServiceInterface
      *
      * @param string $commandClass
      *
-     * @return \chemezov\yii2\yandex\cloud\interfaces\commands\Command
+     * @return \dmitryla\yii2AwsS3Custom\interfaces\commands\Command
      */
     public function create(string $commandClass): Command
     {
@@ -99,7 +99,7 @@ class Service extends Component implements ServiceInterface
     /**
      * Returns command factory.
      *
-     * @return \chemezov\yii2\yandex\cloud\CommandFactory
+     * @return \dmitryla\yii2AwsS3Custom\CommandFactory
      */
     public function commands(): CommandFactory
     {
@@ -109,7 +109,7 @@ class Service extends Component implements ServiceInterface
     /**
      * Returns handler resolver.
      *
-     * @return \chemezov\yii2\yandex\cloud\interfaces\HandlerResolver
+     * @return \dmitryla\yii2AwsS3Custom\interfaces\HandlerResolver
      */
     public function getResolver(): HandlerResolver
     {
@@ -246,10 +246,10 @@ class Service extends Component implements ServiceInterface
     {
         return [
             'client' => ['class' => 'Aws\S3\S3Client'],
-            'resolver' => ['class' => 'chemezov\yii2\yandex\cloud\HandlerResolver'],
-            'bus' => ['class' => 'chemezov\yii2\yandex\cloud\Bus'],
-            'builder' => ['class' => 'chemezov\yii2\yandex\cloud\CommandBuilder'],
-            'factory' => ['class' => 'chemezov\yii2\yandex\cloud\CommandFactory'],
+            'resolver' => ['class' => 'dmitryla\yii2AwsS3Custom\HandlerResolver'],
+            'bus' => ['class' => 'dmitryla\yii2AwsS3Custom\Bus'],
+            'builder' => ['class' => 'dmitryla\yii2AwsS3Custom\CommandBuilder'],
+            'factory' => ['class' => 'dmitryla\yii2AwsS3Custom\CommandFactory'],
         ];
     }
 

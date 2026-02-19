@@ -1,11 +1,11 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\handlers;
+namespace dmitryla\yii2AwsS3Custom\handlers;
 
 use Aws\CommandInterface as AwsCommand;
-use chemezov\yii2\yandex\cloud\base\handlers\Handler;
-use chemezov\yii2\yandex\cloud\interfaces\commands\Asynchronous;
-use chemezov\yii2\yandex\cloud\interfaces\commands\PlainCommand;
+use dmitryla\yii2AwsS3Custom\base\handlers\Handler;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\Asynchronous;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\PlainCommand;
 
 /**
  * Class PlainCommandHandler

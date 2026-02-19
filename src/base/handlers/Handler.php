@@ -1,14 +1,14 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\base\handlers;
+namespace dmitryla\yii2AwsS3Custom\base\handlers;
 
 use Aws\S3\S3Client;
-use chemezov\yii2\yandex\cloud\interfaces\handlers\Handler as HandlerInterface;
+use dmitryla\yii2AwsS3Custom\interfaces\handlers\Handler as HandlerInterface;
 
 /**
  * Class Handler
  *
- * @package chemezov\yii2\yandex\cloud\base\handlers
+ * @package dmitryla\yii2AwsS3Custom\base\handlers
  */
 abstract class Handler implements HandlerInterface
 {

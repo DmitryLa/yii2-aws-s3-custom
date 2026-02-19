@@ -1,32 +1,32 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud;
+namespace dmitryla\yii2AwsS3Custom;
 
-use chemezov\yii2\yandex\cloud\commands\DeleteCommand;
-use chemezov\yii2\yandex\cloud\commands\ExistCommand;
-use chemezov\yii2\yandex\cloud\commands\GetCommand;
-use chemezov\yii2\yandex\cloud\commands\GetPresignedUrlCommand;
-use chemezov\yii2\yandex\cloud\commands\GetUrlCommand;
-use chemezov\yii2\yandex\cloud\commands\PutCommand;
-use chemezov\yii2\yandex\cloud\commands\RestoreCommand;
-use chemezov\yii2\yandex\cloud\commands\UploadCommand;
-use chemezov\yii2\yandex\cloud\commands\ListCommand;
-use chemezov\yii2\yandex\cloud\interfaces;
+use dmitryla\yii2AwsS3Custom\commands\DeleteCommand;
+use dmitryla\yii2AwsS3Custom\commands\ExistCommand;
+use dmitryla\yii2AwsS3Custom\commands\GetCommand;
+use dmitryla\yii2AwsS3Custom\commands\GetPresignedUrlCommand;
+use dmitryla\yii2AwsS3Custom\commands\GetUrlCommand;
+use dmitryla\yii2AwsS3Custom\commands\PutCommand;
+use dmitryla\yii2AwsS3Custom\commands\RestoreCommand;
+use dmitryla\yii2AwsS3Custom\commands\UploadCommand;
+use dmitryla\yii2AwsS3Custom\commands\ListCommand;
+use dmitryla\yii2AwsS3Custom\interfaces;
 
 /**
  * Class CommandFactory
  *
- * @package chemezov\yii2\yandex\cloud
+ * @package dmitryla\yii2AwsS3Custom
  */
 class CommandFactory
 {
-    /** @var \chemezov\yii2\yandex\cloud\interfaces\CommandBuilder */
+    /** @var \dmitryla\yii2AwsS3Custom\interfaces\CommandBuilder */
     protected $builder;
 
     /**
      * CommandFactory constructor.
      *
-     * @param \chemezov\yii2\yandex\cloud\interfaces\CommandBuilder $builder
+     * @param \dmitryla\yii2AwsS3Custom\interfaces\CommandBuilder $builder
      */
     public function __construct(interfaces\CommandBuilder $builder)
     {
@@ -36,7 +36,7 @@ class CommandFactory
     /**
      * @param string $filename
      *
-     * @return \chemezov\yii2\yandex\cloud\commands\GetCommand
+     * @return \dmitryla\yii2AwsS3Custom\commands\GetCommand
      */
     public function get(string $filename): GetCommand
     {
@@ -51,7 +51,7 @@ class CommandFactory
      * @param string $filename
      * @param mixed  $body
      *
-     * @return \chemezov\yii2\yandex\cloud\commands\PutCommand
+     * @return \dmitryla\yii2AwsS3Custom\commands\PutCommand
      */
     public function put(string $filename, $body): PutCommand
     {
@@ -65,7 +65,7 @@ class CommandFactory
     /**
      * @param string $filename
      *
-     * @return \chemezov\yii2\yandex\cloud\commands\DeleteCommand
+     * @return \dmitryla\yii2AwsS3Custom\commands\DeleteCommand
      */
     public function delete(string $filename): DeleteCommand
     {
@@ -80,7 +80,7 @@ class CommandFactory
      * @param string $filename
      * @param mixed  $source
      *
-     * @return \chemezov\yii2\yandex\cloud\commands\UploadCommand
+     * @return \dmitryla\yii2AwsS3Custom\commands\UploadCommand
      */
     public function upload(string $filename, $source): UploadCommand
     {
@@ -95,7 +95,7 @@ class CommandFactory
      * @param string $filename
      * @param int    $days      lifetime of the active copy in days
      *
-     * @return \chemezov\yii2\yandex\cloud\commands\RestoreCommand
+     * @return \dmitryla\yii2AwsS3Custom\commands\RestoreCommand
      */
     public function restore(string $filename, int $days): RestoreCommand
     {
@@ -109,7 +109,7 @@ class CommandFactory
     /**
      * @param string $filename
      *
-     * @return \chemezov\yii2\yandex\cloud\commands\ExistCommand
+     * @return \dmitryla\yii2AwsS3Custom\commands\ExistCommand
      */
     public function exist(string $filename): ExistCommand
     {
@@ -123,7 +123,7 @@ class CommandFactory
     /**
      * @param string $prefix
      *
-     * @return \chemezov\yii2\yandex\cloud\commands\ListCommand
+     * @return \dmitryla\yii2AwsS3Custom\commands\ListCommand
      */
     public function list(string $prefix): ListCommand
     {
@@ -137,7 +137,7 @@ class CommandFactory
     /**
      * @param string $filename
      *
-     * @return \chemezov\yii2\yandex\cloud\commands\GetUrlCommand
+     * @return \dmitryla\yii2AwsS3Custom\commands\GetUrlCommand
      */
     public function getUrl(string $filename): GetUrlCommand
     {
@@ -152,7 +152,7 @@ class CommandFactory
      * @param string $filename
      * @param mixed  $expires
      *
-     * @return \chemezov\yii2\yandex\cloud\commands\GetPresignedUrlCommand
+     * @return \dmitryla\yii2AwsS3Custom\commands\GetPresignedUrlCommand
      */
     public function getPresignedUrl(string $filename, $expires): GetPresignedUrlCommand
     {

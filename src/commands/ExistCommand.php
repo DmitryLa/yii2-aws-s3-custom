@@ -1,17 +1,17 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\commands;
+namespace dmitryla\yii2AwsS3Custom\commands;
 
-use chemezov\yii2\yandex\cloud\base\commands\ExecutableCommand;
-use chemezov\yii2\yandex\cloud\base\commands\traits\Options;
-use chemezov\yii2\yandex\cloud\interfaces\commands\HasBucket;
+use dmitryla\yii2AwsS3Custom\base\commands\ExecutableCommand;
+use dmitryla\yii2AwsS3Custom\base\commands\traits\Options;
+use dmitryla\yii2AwsS3Custom\interfaces\commands\HasBucket;
 
 /**
  * Class ExistCommand
  *
  * @method bool execute()
  *
- * @package chemezov\yii2\yandex\cloud\commands
+ * @package dmitryla\yii2AwsS3Custom\commands
  */
 class ExistCommand extends ExecutableCommand implements HasBucket
 {

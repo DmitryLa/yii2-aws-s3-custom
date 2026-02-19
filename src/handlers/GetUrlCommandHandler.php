@@ -1,9 +1,9 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\handlers;
+namespace dmitryla\yii2AwsS3Custom\handlers;
 
-use chemezov\yii2\yandex\cloud\base\handlers\Handler;
-use chemezov\yii2\yandex\cloud\commands\GetUrlCommand;
+use dmitryla\yii2AwsS3Custom\base\handlers\Handler;
+use dmitryla\yii2AwsS3Custom\commands\GetUrlCommand;
 
 /**
  * Class GetUrlCommandHandler

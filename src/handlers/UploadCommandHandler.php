@@ -1,16 +1,16 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\handlers;
+namespace dmitryla\yii2AwsS3Custom\handlers;
 
-use chemezov\yii2\yandex\cloud\commands\UploadCommand;
-use chemezov\yii2\yandex\cloud\base\handlers\Handler;
+use dmitryla\yii2AwsS3Custom\commands\UploadCommand;
+use dmitryla\yii2AwsS3Custom\base\handlers\Handler;
 use GuzzleHttp\Psr7;
 use Psr\Http\Message\StreamInterface;
 
 /**
  * Class UploadCommandHandler
  *
- * @package chemezov\yii2\yandex\cloud\handlers
+ * @package dmitryla\yii2AwsS3Custom\handlers
  */
 final class UploadCommandHandler extends Handler
 {

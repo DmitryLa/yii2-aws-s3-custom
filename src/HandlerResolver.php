@@ -1,17 +1,17 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud;
+namespace dmitryla\yii2AwsS3Custom;
 
 use Aws\S3\S3Client;
-use chemezov\yii2\yandex\cloud\handlers\PlainCommandHandler;
-use chemezov\yii2\yandex\cloud\interfaces;
+use dmitryla\yii2AwsS3Custom\handlers\PlainCommandHandler;
+use dmitryla\yii2AwsS3Custom\interfaces;
 use yii\base\Configurable;
 use yii\base\Exception;
 
 /**
  * Class HandlerResolver
  *
- * @package chemezov\yii2\yandex\cloud
+ * @package dmitryla\yii2AwsS3Custom
  */
 class HandlerResolver implements interfaces\HandlerResolver, Configurable
 {
@@ -49,9 +49,9 @@ class HandlerResolver implements interfaces\HandlerResolver, Configurable
     }
 
     /**
-     * @param \chemezov\yii2\yandex\cloud\interfaces\commands\Command $command
+     * @param \dmitryla\yii2AwsS3Custom\interfaces\commands\Command $command
      *
-     * @return \chemezov\yii2\yandex\cloud\interfaces\handlers\Handler
+     * @return \dmitryla\yii2AwsS3Custom\interfaces\handlers\Handler
      * @throws \yii\base\Exception
      */
     public function resolve(interfaces\commands\Command $command): interfaces\handlers\Handler
@@ -111,7 +111,7 @@ class HandlerResolver implements interfaces\HandlerResolver, Configurable
     /**
      * @param string|array $type
      *
-     * @return \chemezov\yii2\yandex\cloud\interfaces\handlers\Handler
+     * @return \dmitryla\yii2AwsS3Custom\interfaces\handlers\Handler
      * @throws \yii\base\InvalidConfigException
      */
     protected function createHandler($type): interfaces\handlers\Handler

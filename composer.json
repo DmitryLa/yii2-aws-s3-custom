@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DmitryLa\\Yii2AwsS3Custom\\": "src/"
+            "dmitryla\\yii2AwsS3Custom\\": "src/"
         }
     },
     "extra": {

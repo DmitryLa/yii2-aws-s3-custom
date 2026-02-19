@@ -1,6 +1,6 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\commands;
+namespace dmitryla\yii2AwsS3Custom\commands;
 
 use Aws\ResultInterface;
 use chemezov\yii2\yandex\cloud\base\commands\ExecutableCommand;

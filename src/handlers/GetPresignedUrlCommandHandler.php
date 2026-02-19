@@ -1,19 +1,19 @@
 <?php
 
-namespace chemezov\yii2\yandex\cloud\handlers;
+namespace dmitryla\yii2AwsS3Custom\handlers;
 
-use chemezov\yii2\yandex\cloud\base\handlers\Handler;
-use chemezov\yii2\yandex\cloud\commands\GetPresignedUrlCommand;
+use dmitryla\yii2AwsS3Custom\base\handlers\Handler;
+use dmitryla\yii2AwsS3Custom\commands\GetPresignedUrlCommand;
 
 /**
  * Class GetPresignedUrlCommandHandler
  *
- * @package chemezov\yii2\yandex\cloud\handlers
+ * @package dmitryla\yii2AwsS3Custom\handlers
  */
 final class GetPresignedUrlCommandHandler extends Handler
 {
     /**
-     * @param \chemezov\yii2\yandex\cloud\commands\GetPresignedUrlCommand $command
+     * @param \dmitryla\yii2AwsS3Custom\commands\GetPresignedUrlCommand $command
      *
      * @return string
      */
